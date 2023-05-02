@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(180deg, #4e62ab, #dbd8ae, #dacb6d);
+    height: 100vh;
+    font-family: 'Signika', sans-serif; }
+
+
+.container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-areas:
+    "header . . . "
+    ". logo formulario ."
+    ". cadastro . dados";
+     }
+
+
+.img-logo {
+    grid-area: "logo";
+    grid-column: logo ;
+}
+
+
+.cadastro {margin-left: 130px;
+    grid-area: "logo";
+    grid-column: logo;
+    grid-row: dados;
+   
+}    
+    
+    
+.Formulario {
+    grid-area: "formulario";
+    grid-column: formulario;
+    grid-row: header;
+    margin-top: 100px;
+}
+    
+    
+.dados {
+    grid-area: "formulario";
+    grid-column: formulario;
+    grid-row: logo;}
+
+
+/* decorações*/
+
+h1, p {
+    text-align: center;} 
+  
+p {font-size: small;}
+
+
+a {
+  color: black;
+  text-decoration: none;}   
+    a:visited {text-decoration: none;}  
+
+
+.cobra {
+    position: absolute;
+    translateX(0) scale(0.5);
+    opacity: 0;
+    transition: transform 1s;}
+        .cobra:hover {
+            translateX(10px) scale(1.2);
+            opacity: 1; }
+
+
+.btn-primary {
+    font-family: 'Signika', sans-serif; 
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border: 1px;
+    border-style: double;
+    border-color: #dacb6d;
+    border-radius: 5px;
+    width: 150px;
+    height: 20px;
+    display: block;
+    color:black;
+    background-color:  #dbd8ae;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;} 
+      .btn-primary:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;}   
+      
+
+.img-logo {
+    max-width:500px;
+    max-height:400px;
+
+    min-width:300px;
+    min-height:200px;
+
+    margin-top: 100px;
+    margin-left: 170px;
+  }
+
+
+.cadastro {
+    width: 200px;
+    height: 90px;
+    text-align: center;}  
+    
+
+#log {
+    width: 350px;
+    height: 450px;
+    background-color: #e9e2b7;
+    border: 3px;
+    border-radius: 10px;
+    border-color:#1c3079;}
+      
+      
+.btn-sucess {margin-left: 133px;
+    font-size:large;
+    border: 2px;
+    border-radius: 5px;
+    background-color:  #dacb6d;
+    border-color:#4e62ab;
+    font-family: 'Signika', sans-serif;
+    padding: 10px 10px 10px 10px;} 
+      .btn-sucess:hover{
+        box-shadow: 0px 0px 20px 10px #dacb6d;
+        background-color: #6f7cad;}  
+        
+
+.btn-secondary{
+    font-size: medium;
+    border: 2px;
+    border-radius: 5px;
+    background-color: #4e62ab;
+    border-color:#dacb6d;
+    font-family: 'Signika', sans-serif;
+    padding: 10px 10px 10px 10px;} 
+        .btn-secondary:hover {
+            box-shadow: 0px 0px 30px 10px #717fb1;
+            background-color:  #dacb6d;}      
+          
+
+
+
+    

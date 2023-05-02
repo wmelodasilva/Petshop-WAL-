@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(180deg, #dbd8ae,#4e62ab, #dacb6d);
+    height: 150vh;
+    background-size: 200% 200%;
+    font-family: 'Signika', sans-serif;}
+
+
+.container {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+    "header titulo titulo"
+    "subtitulo dadoscadastro dadoscadastro2"
+    "macaco dadoscadastro dadoscadastro2"
+    ". dados .";}
+
+    .header {
+        grid-area: header;
+    }
+    
+    .titulo {
+        grid-area: titulo;
+        text-align: center;
+        font-size: x-large;
+    }
+
+
+    .subtitulo {
+        grid-area:subtitulo;
+        grid-column: header;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .dadoscadastro {
+        grid-area: dadoscadastro;
+    }
+
+    .dadoscadastro2 {
+        grid-area: dadoscadastro2;
+        
+        
+    }
+
+    .macaco {
+        grid-area: macaco;
+        grid-column: header;
+    }
+
+    .dados {
+        grid-area: dados;
+        grid-column: titulo;
+        text-align: center;
+        margin-top: 70px;
+    }
+  
+    
+
+/* designs*/
+
+a {
+    color: black;
+    text-decoration: none;}   
+      a:visited {text-decoration: none;}  
+
+p, h6 {
+    font-size: 15px;
+}    
+
+h5{
+    font-size: 20px;
+}
+         
+
+fieldset {
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 300px;
+    height: 400px;
+    background-color: #e9e2b7;
+    border-radius: 10px;
+} 
+
+legend {
+    text-align: center;
+}
+
+.btn-secondary {
+    font-family: 'Signika', sans-serif; 
+    text-align: center;
+    border: 1px;
+    border-style: double;
+    border-color: #dacb6d;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    display: block;
+    color:#dacb6d;
+    background-color: #4e62ab;
+    margin-left: 10px;} 
+        .btn-secondary:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;} 
