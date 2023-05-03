@@ -4,6 +4,6 @@ $usuario = "root";
 $senha = "";
 $db = "petshop";
 
-$conexao = mysqli_connect($host, $usuario, $senha, $db);
+$conexao = new mysqli($host, $usuario, $senha, $db);
  
 ?> 
